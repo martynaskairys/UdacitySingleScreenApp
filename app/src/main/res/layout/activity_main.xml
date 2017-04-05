@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/content"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+
+android:layout_alignParentStart="true"
+android:layout_alignParentTop="true"
+
+android:background="@drawable/choosing_folder_gradient"
+android:paddingBottom="0dp"
+android:paddingLeft="0dp"
+android:paddingRight="0dp"
+android:paddingTop="0dp"
+tools:context=".MainActivity">
+
+<ProgressBar
+    android:id="@+id/progress_bar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="invisible" />
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/small_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/small_bg" />
+
+            <TextView
+                android:id="@+id/udacity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="56dp"
+                android:text="@string/Udacity"
+                android:textColor="#ffc127"
+                android:textSize="63sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="140dp"
+                android:text="@string/your_daily_advisor"
+                android:textAllCaps="true"
+                android:textColor="#ffc127"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/wand" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/small_bg"
+                android:layout_marginStart="24dp"
+                android:text="@string/select_category"
+                android:textAllCaps="true"
+                android:textColor="#575871"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/button_menu"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_settings"
+                android:paddingBottom="15dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:id="@+id/button_folder_a"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/category_cover_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1a"
+
+
+                tools:targetApi="lollipop" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:gravity="bottom"
+                android:paddingBottom="16dp"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:text="@string/folder_a"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                   <ImageView
+
+            android:id="@+id/button_folder_b"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/category_cover_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1b"
+
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:gravity="bottom"
+                android:paddingBottom="16dp"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:text="@string/folder_b"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/button_folder_c"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/category_cover_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic1c"
+
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:gravity="bottom"
+                android:paddingBottom="16dp"
+                android:paddingEnd="40dp"
+                android:paddingStart="40dp"
+                android:text="@string/folder_c"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/button_folder_make_your_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:text="@string/folder_d"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
+
+
+

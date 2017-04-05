@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Udacity Single Screen App</string>
+
+
+    <string name="folder_a">Programming Habits</string>
+    <string name="folder_b">Live Healthier</string>
+    <string name="folder_c">Boost Positivity</string>
+    <string name="folder_d">Make Your Suggestion</string>
+
+    <string name="select_category">select category</string>
+    <string name="your_daily_advisor">Your Android Advisor</string>
+    <string name="Udacity">Udacity</string>
+
+
+</resources>
